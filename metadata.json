@@ -1,0 +1,6 @@
+{
+  "name": "KrishiHub Bangladesh",
+  "description": "একটি প্ল্যাটফর্মে বাংলাদেশের সকল কৃষি তথ্য - Crop Encyclopedia, AMS, DAE Handbook, Smart Farming Tools, 64-District Map, Land Converter & AI Agri Advisor",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

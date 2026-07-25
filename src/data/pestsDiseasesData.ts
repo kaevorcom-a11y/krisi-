@@ -1,0 +1,93 @@
+import { PestDisease, AcronymItem } from '../types';
+
+export const PESTS_AND_DISEASES: PestDisease[] = [
+  {
+    id: 'blast-rice',
+    nameBengali: 'ধানের ব্লাস্ট রোগ (Rice Blast)',
+    nameEnglish: 'Rice Blast Disease',
+    type: 'disease',
+    affectedCrops: ['ধান', 'গম'],
+    symptoms: [
+      'পাতায় দু মাথায় চোখ আকৃতির (Eye-shaped) ধসর কেন্দ্রবিশিষ্ট বাদামী দাগ দেখা যায়।',
+      'শীষের গোড়া কালো হয়ে পচে ধান চিটা হয়ে ঝুলে পড়ে (Neck Blast)।',
+    ],
+    chemicalControl: ['ট্রাইসাইক্লাজোল (ট্রুপার ৭৫ ডব্লিউপি) ০.৭৫ গ্রাম/লিটার', 'নতিভো ৭৫ ডব্লিউপি ০.৪ গ্রাম/লিটার'],
+    organicIpmControl: ['সুষম নাইট্রোজেন ব্যবহার', 'পটাশ সার বৃদ্ধি', 'ট্রাইকোডার্মা বায়ো-ফাংগিসাইড প্রয়োগ'],
+    preventionTips: ['বীজ শোধন বাধ্যতামূলক করা', 'নাইট্রোজেন সার অতিরিক্ত না দেওয়া'],
+    severity: 'উচ্চ',
+  },
+  {
+    id: 'late-blight-potato',
+    nameBengali: 'আলুর লেট ব্লাইট বা মড়ক রোগ (Late Blight of Potato)',
+    nameEnglish: 'Potato Late Blight',
+    type: 'disease',
+    affectedCrops: ['আলু', 'টমেটো'],
+    symptoms: [
+      'পাতায় পানিতে ভিজা ছোপ ছোপ কালচে দাগ পড়ে।',
+      'সকালে পাতায় সাদা তুলোর মতো ছত্রাক দেখা যায় এবং দ্রুত গাছ পচে দুর্গন্ধ বের হয়।',
+    ],
+    chemicalControl: ['ম্যানকোজেব (ইন্ডোফিল এম-৪৫) ২.৫ গ্রাম/লিটার', 'সেকোর বা রিডোমিল গোল্ড ২ গ্রাম/লিটার'],
+    organicIpmControl: ['কপার সুফলেট বোর্দো মিক্সচার স্প্রে', 'রোগাক্রান্ত গাছ তুলে পুড়িয়ে ফেলা'],
+    preventionTips: ['কুয়াশাচ্ছন্ন আবহাওয়ায় আগাম প্রতিরোধক স্প্রে দেওয়া'],
+    severity: 'উচ্চ',
+  },
+  {
+    id: 'stem-borer-rice',
+    nameBengali: 'ধানের মাজরা পোকা (Rice Stem Borer)',
+    nameEnglish: 'Rice Stem Borer',
+    type: 'pest',
+    affectedCrops: ['ধান', 'ভুট্টা'],
+    symptoms: [
+      'চারা অবস্থায় গাছের মাঝের পাতা শুকিয়ে যায় যাকে "মরা ডিগ" (Dead heart) বলে।',
+      'থোড় ও শীষ আসার সময় সাদা চিটা শীষ বের হয় যাকে "সাদা শীষ" (White head) বলে।',
+    ],
+    chemicalControl: ['কার্বোফুরান (ফুরাডান ৫জি) ১০ কেজি/হেক্টর', 'ক্লোরেনট্রানিলিপ্রোল (ভার্টাকো)'],
+    organicIpmControl: ['ক্ষেতে ডাল পুঁতে (পার্চিং) পাখি বসানো', 'সেক্স ফেরোমোন ফাঁদ ব্যবহার', 'আলোর ফাঁদ'],
+    preventionTips: ['ধান কাটার পর নাড়া পুড়িয়ে মারা', 'হাত দিয়ে ডিমের গাদা ধ্বংস করা'],
+    severity: 'উচ্চ',
+  },
+  {
+    id: 'fall-armyworm-maize',
+    nameBengali: 'ভুট্টার ফল আর্মিওয়ার্ম (Fall Armyworm)',
+    nameEnglish: 'Fall Armyworm',
+    type: 'pest',
+    affectedCrops: ['ভুট্টা', 'ধান', 'আখ'],
+    symptoms: [
+      'ভুট্টার ডিগ পাতায় বড় বড় ছিদ্র করে মল ফেলে রাখে।',
+      'পোকার মাথায় ইংরেজি "Y" এর মতো চিহ্ন থাকে।',
+    ],
+    chemicalControl: ['এমামেকটিন বেঞ্জোয়েট (প্রোক্লেম) ১ গ্রাম/লিটার', 'স্পিনোস্যাড (ট্রেসার)'],
+    organicIpmControl: ['গাছের ডিগে শুকনো বালি বা ছাই দেওয়া', 'ট্রাইকোগ্রামা পরজীবী পোকা ছাড়া'],
+    preventionTips: ['আগাম রোপণ করা', 'নিয়মিত জমি পরিদর্শন'],
+    severity: 'উচ্চ',
+  },
+  {
+    id: 'anthracnose-mango',
+    nameBengali: 'আমের অ্যানথ্রাকনোজ (Mango Anthracnose)',
+    nameEnglish: 'Mango Anthracnose',
+    type: 'disease',
+    affectedCrops: ['আম', 'পেয়ারা', 'পেঁপে'],
+    symptoms: [
+      'পাতায় ও ফলে ছোট ছোট গোল কালচে দাগ দেখা যায়।',
+      'পাকা আমে বড় পচা কালো দাগ হয়ে আম দ্রুত পচে যায়।',
+    ],
+    chemicalControl: ['স্কোর ২৫০ ইসি ০.৫ মিলি/লিটার', 'অটোস্টিন ২ গ্রাম/লিটার'],
+    organicIpmControl: ['গরম পানিতে (৫২ ডিগ্রি সেলসিয়াস) ৫ মিনিট আম চুবিয়ে রাখা'],
+    preventionTips: ['গাছের মরা ডালপালা ছাঁটাই করা', 'ফল ব্যাগিং প্রযুক্তি'],
+    severity: 'মাঝারি',
+  },
+];
+
+export const ACRONYM_GLOSSARY: AcronymItem[] = [
+  { acronym: 'BARI', fullNameBengali: 'বাংলাদেশ কৃষি গবেষণা ইনস্টিটিউট', fullNameEnglish: 'Bangladesh Agricultural Research Institute', description: 'সবজি, ফলমূল, মসলা, ডাল ও তেলবীজ নিয়ে বৈজ্ঞানিক গবেষণা প্রতিষ্ঠান।', category: 'সংস্থা' },
+  { acronym: 'BRRI', fullNameBengali: 'বাংলাদেশ ধান গবেষণা ইনস্টিটিউট', fullNameEnglish: 'Bangladesh Rice Research Institute', description: 'উচ্চফলনশীল ও প্রতিকূলতাসহিষ্ণু ধানের জাত উদ্ভাবনকারী শীর্ষ প্রতিষ্ঠান।', category: 'সংস্থা' },
+  { acronym: 'DAE', fullNameBengali: 'কৃষি সম্প্রসারণ অধিদপ্তর', fullNameEnglish: 'Department of Agricultural Extension', description: 'মাঠ পর্যায়ে প্রযুক্তি সম্প্রসারণ ও কৃষক সেবা প্রদানকারী সরকারি সংস্থা।', category: 'সংস্থা' },
+  { acronym: 'AIS', fullNameBengali: 'কৃষি তথ্য সার্ভিস', fullNameEnglish: 'Agriculture Information Service', description: 'কৃষি রেডিও, টেলিভিশন, পত্রিকা ও ১৬১২৩ হটলাইন পরিচালনাকারী সংস্থা।', category: 'সংস্থা' },
+  { acronym: 'BADC', fullNameBengali: 'বাংলাদেশ কৃষি উন্নয়ন কর্পোরেশন', fullNameEnglish: 'Bangladesh Agricultural Development Corporation', description: 'বীজ উৎপাদন, সার সরবরাহ ও সেচ অবকাঠামো উন্নয়ন সংস্থা।', category: 'সংস্থা' },
+  { acronym: 'IPM', fullNameBengali: 'সমন্বিত বালাই ব্যবস্থাপনা', fullNameEnglish: 'Integrated Pest Management', description: 'পরিবেশবান্ধব উপায়ে জৈব ও প্রাকৃতিক নিয়মে ক্ষতিকর পোকা দমনের কৌশল।', category: 'বিজ্ঞান' },
+  { acronym: 'GAP', fullNameBengali: 'উত্তম কৃষি চর্চা', fullNameEnglish: 'Good Agricultural Practices', description: 'নিরাপদ খাদ্য ও রপ্তানিযোগ্য শস্য উৎপাদনের আন্তর্জাতিক স্ট্যান্ডার্ড প্রটোকল।', category: 'নীতিমালা' },
+  { acronym: 'pH', fullNameBengali: 'মাটির অম্লত্ব বা ক্ষারত্বের মাত্রা', fullNameEnglish: 'Potential of Hydrogen', description: 'মাটি ক্ষারীয় (pH>৭) নাকি অম্লীয় (pH<৭) তা পরিমাপের স্কেল।', category: 'বিজ্ঞান' },
+  { acronym: 'TSP', fullNameBengali: 'ট্রিপল সুপার ফসফেট', fullNameEnglish: 'Triple Super Phosphate', description: 'ফসফরাস সমৃদ্ধ সার যা গাছের শিকড় বৃদ্ধি ও ফুল-ফল ধারণে সাহায্য করে।', category: 'সার/রসায়ন' },
+  { acronym: 'MoP', fullNameBengali: 'মিউরেট অব পটাশ', fullNameEnglish: 'Muriate of Potash', description: 'পটাশিয়াম সমৃদ্ধ লাল সার যা গাছের রোগ প্রতিরোধ ক্ষমতা ও ফলের উজ্জ্বলতা বাড়ায়।', category: 'সার/রসায়ন' },
+  { acronym: 'SRDI', fullNameBengali: 'মৃত্তিকা সম্পদ উন্নয়ন ইনস্টিটিউট', fullNameEnglish: 'Soil Resource Development Institute', description: 'বাংলাদেশের মাটির জরিপ, মাটি পরীক্ষা ও সুষম সার ডিজিটাল কার্ড সরবরাহকারী সংস্থা।', category: 'সংস্থা' },
+];
